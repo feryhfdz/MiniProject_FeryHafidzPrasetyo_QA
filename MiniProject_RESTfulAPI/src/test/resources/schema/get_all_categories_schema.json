@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$ref": "#/definitions/Welcome",
+  "definitions": {
+    "Welcome": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Datum"
+          }
+        }
+      },
+      "required": [
+        "data"
+      ],
+      "title": "Welcome"
+    },
+    "Datum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "ID": {
+          "type": "integer"
+        },
+        "Name": {
+          "$ref": "#/definitions/Name"
+        },
+        "Description": {
+          "$ref": "#/definitions/Description"
+        }
+      },
+      "required": [
+        "Description",
+        "ID",
+        "Name"
+      ],
+      "title": "Datum"
+    },
+    "Description": {
+      "type": "string",
+      "enum": [
+        "for gaming purposes",
+        "for gaming purpossses",
+        "for work purposess",
+        "mobil balap"
+      ],
+      "title": "Description"
+    },
+    "Name": {
+      "type": "string",
+      "enum": [
+        "gaming",
+        "work",
+        "nissan GTR"
+      ],
+      "title": "Name"
+    }
+  }
+}

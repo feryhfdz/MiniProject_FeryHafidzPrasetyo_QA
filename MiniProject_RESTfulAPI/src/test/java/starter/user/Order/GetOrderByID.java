@@ -16,7 +16,7 @@ public class GetOrderByID {
 
     @Step("I set order API endpoint by ID")
     public String setApiMyOrderById(){
-        return url + "orders/13792";
+        return url + "orders/14009";
     }
 
     @Step("I send GET request to get order information by ID")

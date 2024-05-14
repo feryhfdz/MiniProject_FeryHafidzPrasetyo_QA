@@ -24,8 +24,8 @@ public class CreateNewOrder {
         JSONObject requestBody = new JSONObject();
         JSONArray orderRequestBody = new JSONArray();
 
-        requestBody.put("product_id", 88706);
-        requestBody.put("quantity", 13774);
+        requestBody.put("product_id", 88787);
+        requestBody.put("quantity", 200);
         orderRequestBody.put(0, requestBody);
 
         System.out.println(orderRequestBody);

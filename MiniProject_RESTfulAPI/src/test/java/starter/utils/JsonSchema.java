@@ -19,5 +19,4 @@ public class JsonSchema {
     public static final String LOGIN_SCHEMA = "schema/login_schema.json";
     public static final String GET_ORDER_BY_ID_SCHEMA = "schema/get_order_by_id_schema.json";
     public static final String DELETE_CATEGORY_SCHEMA = "schema/delete_category_schema.json";
-    public static final String LOGIN_ERROR_SCHEMA = "schema/login_error_schema.json";
 }
